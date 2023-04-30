@@ -25,7 +25,6 @@ set("n", "<space>O", "printf('m`%sO<ESC>``', v:count1)", { expr = true, desc = "
 set("n", "c", '"_c')
 set("n", "C", '"_C')
 set("n", "cc", '"_cc')
-set("n", "<C-u>", "viwU", opts)-- easy caps
 -- TODO: understand quickfix
 -- quickfix navigation
 -- set("n", "<C-k", "<cmd>cnext<CR>zz")
@@ -43,7 +42,6 @@ set("v", ">", ">gv", opts)
 
 -- INSERT ----------------------------------------------------------------------
 -- Break inserted text into smaller undo units when we insert some punctuation chars.
-set("i", "<C-u>", "<Esc>viwUi", opts)-- easy caps
 local undo_ch = { ",", ".", "!", "?", ";", ":" }
 for _, ch in ipairs(undo_ch) do
   set("i", ch, ch .. "<c-g>u")

@@ -1,1 +1,2 @@
-require("plugins.colors")
+require("plugins.cmp")
+require("plugins.telescope")

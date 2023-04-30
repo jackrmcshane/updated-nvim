@@ -43,7 +43,7 @@ local opts = {
 
   -- folding
   foldenable = true,
-  foldlevel = 4,
+  foldlevel = 10,
   foldnestmax = 10,
   foldmethod = "expr",
   foldexpr = "nvim_treesitter#foldexpr()",
