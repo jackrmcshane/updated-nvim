@@ -8,6 +8,13 @@
 ## Current Features
 [] blah
 
+## keymaps to address
+[] treesitter
+    [] init_selection
+    [] node_incremental
+    [] scope_incremental
+    [] node_decremental
+
 ## Main Components of my Nvim Config
 [] core
     [] keymappings
@@ -39,6 +46,7 @@
 [] colorschemes
 [] autocompletion
 [] wildmenu completion
-[] easy folding
 [] nvchad theme switcher
 [] go to file functionality
+[] easy folding
+[] spell checking/correcting
