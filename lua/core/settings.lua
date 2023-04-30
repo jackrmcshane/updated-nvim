@@ -5,6 +5,7 @@ local opts = {
   timeout = true,
   timeoutlen = 500,
   termguicolors = true,
+  pumheight = 20,
 
   splitright = true,
   splitbelow = true,
