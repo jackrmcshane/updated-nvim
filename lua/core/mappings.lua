@@ -15,7 +15,7 @@ set("n", "zk", "zkzz")
 set("n", "zo", "zozz")
 set("n", "zc", "zCzz")
 -- global search and replace for the word you are on
-set("n", "<leader>r", [[:%s//g<Left><Left>]])
+set("n", "<leader>rw", [[:%s//g<Left><Left>]])
 set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
 -- see https://stackoverflow.com/a/16136133/6064933
 set("n", "<space>o", "printf('m`%so<ESC>``', v:count1)", { expr = true, desc = "insert line below", })

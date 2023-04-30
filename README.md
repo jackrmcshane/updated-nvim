@@ -65,7 +65,7 @@
 [] look into further LuaSnip configuration
 [] files in need of changing
     [] plugins.cmp
-    [] plugins.telescope
+    [x] plugins.telescope
     [] plugins.lsp
 [] treesitter keybindings in need of change
     [] init_selection
