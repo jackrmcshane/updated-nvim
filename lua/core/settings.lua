@@ -42,12 +42,12 @@ local opts = {
   undodir = os.getenv("HOME") .. "/.vim/undodir",
 
   -- folding
-  -- foldenable = true,
-  -- foldlevel = 10,
-  -- foldnestmax = 10,
-  -- foldmethod = "expr",
-  -- foldexpr = "nvim_treesitter#foldexpr()",
-  -- foldopen = { "block", "mark", "percent", "quickfix", "search", "undo" },
+  foldenable = true,
+  foldlevel = 4,
+  foldnestmax = 10,
+  foldmethod = "expr",
+  foldexpr = "nvim_treesitter#foldexpr()",
+  foldopen = { "block", "mark", "percent", "quickfix", "search", "undo" },
 }
 
 for k, v in pairs(opts) do

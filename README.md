@@ -50,6 +50,7 @@
 [] go to file functionality
 [] easy folding
 [] spell checking/correcting
+[] function to toggle foldlevel
 
 
 ## TODO LIST
