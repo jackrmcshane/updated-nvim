@@ -56,10 +56,16 @@ for k, v in pairs(opts) do
 end
 
 -- set global diagnostic settings
-vim.diagnostic.config({
-  virtual_text = true,
-  signs = false, -- no signs in gutter
-  underline = true,
-  update_in_insert = false,
-  severity_sort = false,
-})
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    update_in_insert = false,
+    underline = true,
+    signs = {
+      -- severity_limit = "Hint",
+      false,
+    },
+    virtual_text = {
+      severity_limit = "Warning",
+    },
+  }
+)              
