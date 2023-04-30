@@ -3,7 +3,7 @@ local opts = {
   clipboard = "unnamedplus", -- all yank/past use system clipboard
   updatetime = 50,
   timeout = true,
-  timeoutlen = 250,
+  timeoutlen = 500,
   termguicolors = true,
 
   splitright = true,

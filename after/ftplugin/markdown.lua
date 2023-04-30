@@ -10,6 +10,7 @@ for k, v in pairs(opts) do
   vim.opt[k] = v
 end
 
+local key_opts = { noremap = true, silent = true }
 if vim.fn.executable("MarkdownPreviewToggle") == 1 then
-  set("n", "<F9>", ":MarkdownPreviewToggle<CR>", { silent = true })
+  set("n", "<F9>", ":MarkdownPreviewToggle<CR>", key_opts)
 end
