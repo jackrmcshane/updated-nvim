@@ -11,7 +11,7 @@ local opts = {
 
   number = true,
   relativenumber = true,
-  signcolumn = "yes:1",
+  signcolumn = "auto:1",
   colorcolumn = "80",
   scrolloff = 5,
   showmode = false,

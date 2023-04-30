@@ -21,6 +21,7 @@ return {
         topdelete = { text = '‾' },
         changedelete = { text = '~' },
       },
+      signcolumn = false, -- toggle with `:Gitsigns toggle_signs`
     },
   },
 
@@ -32,5 +33,9 @@ return {
       char = '┊',
       show_trailing_blankline_indent = false,
     },
+    config = function()
+      local set = vim.keymap.set
+      set("n", "<leader>gs", ":Gitsigns toggle_signs<CR>", { silent = true })
+    end,
   },
 }

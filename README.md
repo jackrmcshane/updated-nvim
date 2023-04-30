@@ -22,7 +22,7 @@
 [] wildmenu compeltion (wilder)
 [x] Lualine
 [] indent-blankline.nvim
-[] Colorschemes
+[x] Colorschemes
     [x] kanagawa
     [x] gruvbox-material
 
@@ -34,6 +34,8 @@
 
 ### Desired Features
 [] the primeagens harpoon convenient navigation
+[] indentline
+    [] only show if in a language that does not use {} (ie. python, lua)
 [] fuzzy finding for:
     [] EVERYTHING
     [] references
@@ -42,24 +44,22 @@
 [] lsp
     [] python, c/c++, rust, lua, bash, markdown
     [] jump to def
-[] colorschemes
-    [] more of them
 [] autocompletion
 [] wildmenu completion
 [] nvchad theme switcher
 [] go to file functionality
 [] easy folding
+    [] function to toggle foldlevel
 [] spell checking/correcting
-[] function to toggle foldlevel
+[] keybind to move a split to a tab (<C-w>T)
+[] markdown functionality
+[] LaTeX functionality
+[x] gitsigns functionality
+    [x] only shows when I toggle on using a keybind
+    [x] keybind to toggle signs
 
 
-## TODO LIST
-[] TODO: outline core desired plugins
-[x] add core.settings
-[] TODO: add core.mappings
-[] TODO: add core.autocommands
-[] TODO: add filetype-specific settings in after/ftplugin
-## keymaps to address
+## KEYBINDS REQUIRING REMAPPING
 [] treesitter
     [] init_selection
     [] node_incremental
