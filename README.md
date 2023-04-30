@@ -24,7 +24,9 @@
     [] Debugging (nvim-dap)
     [] commenting
     [] wildmenu compeltion (wilder)
+    [x] statusbar (Lualine)
 
+[] util
 [] after files
 
 ### Desired Features
