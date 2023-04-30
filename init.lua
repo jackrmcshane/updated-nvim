@@ -45,6 +45,7 @@ require("lazy").setup({ -- lazy loading plugin manager
   { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter
   { "nvim-treesitter/nvim-treesitter-context" },
   require("plugins.markdown"),
+  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   -- Aesthetics
   require("plugins.colors"),
@@ -55,4 +56,6 @@ require("core")
 require("plugins")
 
 utils.set_colorscheme()
+
+vim.cmd [[ colorscheme kanagawa ]]
 vim.cmd [[ echom "<(\"<) <('')>> (>\")>" ]]

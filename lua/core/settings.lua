@@ -76,3 +76,4 @@ vim.diagnostic.config({
 --     },
 --   }
 -- )              
+vim.opt.updatetime = 50
