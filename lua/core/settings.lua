@@ -54,3 +54,12 @@ local opts = {
 for k, v in pairs(opts) do
   vim.opt[k] = v
 end
+
+-- set global diagnostic settings
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = false, -- no signs in gutter
+  underline = true,
+  update_in_insert = false,
+  severity_sort = false,
+})

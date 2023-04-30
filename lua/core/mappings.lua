@@ -14,17 +14,17 @@ set("n", "zj", "zjzz")
 set("n", "zk", "zkzz")
 set("n", "zo", "zozz")
 set("n", "zc", "zCzz")
+-- Change text without putting it into the vim register,
+-- see https://stackoverflow.com/q/54255/6064933
+set("n", "c", '"_c')
+set("n", "C", '"_C')
+set("n", "cc", '"_cc')
 -- global search and replace for the word you are on
 set("n", "<leader>rw", [[:%s//g<Left><Left>]])
 set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
 -- see https://stackoverflow.com/a/16136133/6064933
 set("n", "<space>o", "printf('m`%so<ESC>``', v:count1)", { expr = true, desc = "insert line below", })
 set("n", "<space>O", "printf('m`%sO<ESC>``', v:count1)", { expr = true, desc = "insert line above", })
--- Change text without putting it into the vim register,
--- see https://stackoverflow.com/q/54255/6064933
-set("n", "c", '"_c')
-set("n", "C", '"_C')
-set("n", "cc", '"_cc')
 -- TODO: understand quickfix
 -- quickfix navigation
 -- set("n", "<C-k", "<cmd>cnext<CR>zz")

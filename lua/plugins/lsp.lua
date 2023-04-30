@@ -45,7 +45,7 @@ return {
 
         -- See `:help K` for why this keymap
         nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-        nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+        nmap('<C-h>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
         -- Lesser used LSP functionality
         nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
@@ -67,11 +67,12 @@ return {
       --  Add any additional override configuration in the following tables. They will be passed to
       --  the `settings` field of the server config. You must look up that documentation yourself.
       local servers = {
-        -- clangd = {},
-        -- gopls = {},
-        -- pyright = {},
-        -- rust_analyzer = {},
-        -- tsserver = {},
+        clangd = {},
+        pyright = {},
+        rust_analyzer = {},
+        bashls = {},
+        vimls = {},
+        prosemd_lsp = {}, -- markdown
 
         lua_ls = {
           Lua = {
