@@ -10,6 +10,7 @@ require("lazy").setup({ -- lazy loading plugin manager
   { "christoomey/vim-tmux-navigator", lazy = false }, -- integration with tmux
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   require("plugins.treesitter"),
+  { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter
 
   -- Aesthetics
   require("plugins.colors"),
