@@ -11,13 +11,13 @@ local opts = {
 
   number = true,
   relativenumber = true,
-  signcolumn = "yes",
+  signcolumn = "auto",
   colorcolumn = "80",
   scrolloff = 5,
   showmode = false,
 
   hlsearch = false,
-  ignorecase = false,
+  ignorecase = true,
   smartcase = true,
   completeopt = { "menuone", "noselect" },
   wildignorecase = true,
