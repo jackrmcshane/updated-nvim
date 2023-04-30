@@ -31,9 +31,9 @@ local opts = {
   showbreak = "...",
   breakindentopt = { "shift:0" }, -- how far to indent wrapped line
 
-  tabstop = 4,
-  shiftwidth = 4,
-  softtabstop = 4,
+  tabstop = 2,
+  shiftwidth = 2,
+  softtabstop = 2,
   expandtab = true,
 
   backup = false,
