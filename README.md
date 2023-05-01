@@ -3,25 +3,23 @@
     * keymappings
     * settings
     * autocommands
-
 * plugins
 * util
-* after directory
+* snippets
+* after/ftplugin
 
 
 ## Current Plugins
-[] autocomplete (cmp)
-[] snippets (LuaSnip)
+[x] nvim-cmp
+[x] LuaSnip
 [x] Treesitter
-[] Lsp for various languages (mason, lsp-config)
-[] fuzzy finding (telescope)
+[x] lspconfig, Mason
+[x] Telescope
 [x] harpoon
-[] Debugging (nvim-dap)
-[] gitsigns.nvim
+[x] gitsigns.nvim
 [x] Comment.nvim
-[] wildmenu compeltion (wilder)
 [x] Lualine
-[] indent-blankline.nvim
+[x] indent-blankline.nvim
 [x] Colorschemes
     [x] kanagawa
     [x] gruvbox-material
@@ -30,43 +28,42 @@
 ## Current Features
 * File parsing using Treesitter and all related goodies
 * commenting via Comment.nvim
+* snippets completion
+* fuzzy finding for:
+    * EVERYTHING
+    * references
+    * open buffers
+    * project (ie git files)
+    * keymaps
+* lsp
+    * python, c/c++, rust, lua, bash, markdown
+    * jump to def
+    * spell checking/correcting
+* autocompletion
+* the primeagens harpoon convenient navigation
+* gitsigns functionality
+    * only shows when I toggle on using a keybind
+    * keybind to toggle signs
 
-
-### Desired Features
+### Future Features
+[] keybind to move a split to a tab (<C-w>T)
+[] Debugging (nvim-dap)
+[] function to search available snippets for a file using telescope popup menu
+[] easy folding
+    [] function to toggle foldlevel
 [] indentline
     [] only show if in a language that does not use {} (ie. python, lua)
-[] fuzzy finding for:
-    [] EVERYTHING
-    [] references
-    [] open buffers
-    [] project (ie git files)
-    [] keymaps
-[] lsp
-    [] python, c/c++, rust, lua, bash, markdown
-    [] jump to def
-[] autocompletion
 [] wildmenu completion
 [] nvchad theme switcher
 [] go to file functionality
-[] easy folding
-    [] function to toggle foldlevel
-[] spell checking/correcting
-[] keybind to move a split to a tab (<C-w>T)
 [] markdown functionality
 [] LaTeX functionality
 [] function/autocommand to resume previous cursor position when opening a file
-[x] the primeagens harpoon convenient navigation
-[x] gitsigns functionality
-    [x] only shows when I toggle on using a keybind
-    [x] keybind to toggle signs
+[] wildmenu compeltion (wilder) -- this may already be accomplished through nvim-cmp
 
 
 ## TODO
 [] look into further LuaSnip configuration
-[] files in need of changing
-    [] plugins.cmp
-    [x] plugins.telescope
-    [] plugins.lsp
 [] treesitter keybindings in need of change
     [] init_selection
     [] node_incremental
