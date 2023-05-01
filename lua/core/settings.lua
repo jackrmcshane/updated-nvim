@@ -12,7 +12,7 @@ local opts = {
 
   number = true,
   relativenumber = true,
-  signcolumn = "auto:1",
+  signcolumn = "yes:1",
   colorcolumn = "80",
   scrolloff = 5,
   showmode = false,
@@ -55,17 +55,22 @@ for k, v in pairs(opts) do
   vim.opt[k] = v
 end
 
+vim.diagnostic.config({
+  signs = false
+})
+
+-- TODO: this does not seem to be working now???
 -- set global diagnostic settings
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     update_in_insert = false,
     underline = true,
-    signs = {
-      -- severity_limit = "Hint",
-      false,
-    },
+    -- signs = {
+    --   -- severity_limit = "Hint",
+    --   false,
+    -- },
     virtual_text = {
-      severity_limit = "Warning",
+      severity_limit = "Info",
     },
   }
 )              

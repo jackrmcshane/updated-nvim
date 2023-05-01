@@ -8,6 +8,7 @@ luasnip.config.setup {}
 
 -- snippets loading MUST be done before cmp setup!!!
 require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets" })
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -27,9 +28,9 @@ cmp.setup {
     },
   },
   sources = cmp.config.sources {
+    { name = 'luasnip' },
     { name = "nvim_lua" },
     { name = 'nvim_lsp' },
-    { name = 'luasnip' },
     { name = "path" },
     { name = "buffer" },
   },
