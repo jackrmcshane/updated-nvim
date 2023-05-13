@@ -70,7 +70,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     --   false,
     -- },
     virtual_text = {
-      severity_limit = "Info",
+      severity_limit = "Warning",
     },
   }
 )              
