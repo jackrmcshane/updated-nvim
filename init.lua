@@ -1,3 +1,4 @@
+local utils = require("util.utils")
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -43,5 +44,5 @@ require("lazy").setup({ -- lazy loading plugin manager
 require("core")
 require("plugins")
 
-require("util.utils").set_colorscheme()
+utils.set_colorscheme()
 vim.cmd [[ echom "<(\"<) <('')>> (>\")>" ]]
