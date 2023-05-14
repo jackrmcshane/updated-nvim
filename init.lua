@@ -20,6 +20,8 @@ require("lazy").setup({ -- lazy loading plugin manager
       'saadparwaiz1/cmp_luasnip',
       "hrsh7th/cmp-nvim-lua", 
       "onsails/lspkind.nvim", 
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
     },
   },
 
@@ -35,6 +37,7 @@ require("lazy").setup({ -- lazy loading plugin manager
   require("plugins.harpoon"),
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter
+  { "nvim-treesitter/nvim-treesitter-context" },
 
   -- Aesthetics
   require("plugins.colors"),
