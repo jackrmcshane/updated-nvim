@@ -43,5 +43,5 @@ require("lazy").setup({ -- lazy loading plugin manager
 require("core")
 require("plugins")
 
-vim.cmd [[ colorscheme kanagawa ]]
+require("util.utils").set_colorscheme()
 vim.cmd [[ echom "<(\"<) <('')>> (>\")>" ]]
