@@ -24,7 +24,8 @@ ls.config.set_config({
   },
 })
 
-set({"i", "s"}, "<C-j>", function()
+-- none of these work because of nvim-tmux-navigation
+set({"i", "s"}, "<C-n>", function()
   if ls.expand_or_jumpable() then
     ls.expand_or_jump()
   end
@@ -36,7 +37,7 @@ set({"i", "s"}, "<C-k>", function()
   end
 end, { silent = true })
 
-set("i", "<C-l>", function()
+set("i", "<C-;>", function()
   if ls.choice_active() then
     ls.change_choice(1)
   end
