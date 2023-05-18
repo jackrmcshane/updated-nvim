@@ -1,3 +1,4 @@
+local utils = require("util.utils")
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -19,6 +20,8 @@ require("lazy").setup({ -- lazy loading plugin manager
       'saadparwaiz1/cmp_luasnip',
       "hrsh7th/cmp-nvim-lua", 
       "onsails/lspkind.nvim", 
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
     },
   },
 
@@ -34,6 +37,7 @@ require("lazy").setup({ -- lazy loading plugin manager
   require("plugins.harpoon"),
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter
+  { "nvim-treesitter/nvim-treesitter-context" },
 
   -- Aesthetics
   require("plugins.colors"),
@@ -43,5 +47,5 @@ require("lazy").setup({ -- lazy loading plugin manager
 require("core")
 require("plugins")
 
-vim.cmd [[ colorscheme kanagawa ]]
+utils.set_colorscheme()
 vim.cmd [[ echom "<(\"<) <('')>> (>\")>" ]]
