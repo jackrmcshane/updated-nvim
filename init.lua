@@ -34,6 +34,12 @@ require("lazy").setup({ -- lazy loading plugin manager
     end,
   },
 
+  { "mfussenegger/nvim-dap" },
+  { "rcarriga/nvim-dap-ui" },
+  { "theHamsta/nvim-dap-virtual-text" },
+  { "nvim-telescope/telescope-dap.nvim" },
+  { "mfussenegger/nvim-dap-python" },
+
   require("plugins.harpoon"),
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter

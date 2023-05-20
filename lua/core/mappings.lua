@@ -23,8 +23,9 @@ set("n", "cc", '"_cc')
 set("n", "<leader>rw", [[:%s//g<Left><Left>]])
 set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
 -- see https://stackoverflow.com/a/16136133/6064933
-set("n", "<space>o", "printf('m`%so<ESC>``', v:count1)", { expr = true, desc = "insert line below", })
-set("n", "<space>O", "printf('m`%sO<ESC>``', v:count1)", { expr = true, desc = "insert line above", })
+-- o & O are being used for dap (debugging)
+-- set("n", "<leader>o", "printf('m`%so<ESC>``', v:count1)", { expr = true, desc = "insert line below", })
+-- set("n", "<leader>O", "printf('m`%sO<ESC>``', v:count1)", { expr = true, desc = "insert line above", })
 -- TODO: understand quickfix
 -- quickfix navigation
 -- set("n", "<C-k", "<cmd>cnext<CR>zz")
