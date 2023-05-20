@@ -28,11 +28,11 @@ cmp.setup {
     },
   },
   sources = cmp.config.sources {
-    { name = 'luasnip' },
-    { name = "nvim_lua" },
-    { name = 'nvim_lsp' },
-    { name = "path" },
     { name = "buffer" },
+    { name = 'luasnip' },
+    { name = 'nvim_lsp' },
+    { name = "nvim_lua" },
+    { name = "path" },
   },
   formatting = { -- how options show up in the completion menu
     format = lspkind.cmp_format {
