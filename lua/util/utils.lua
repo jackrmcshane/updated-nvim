@@ -10,7 +10,7 @@ M.set_colorscheme = function()
   end
 
   local hostname = get_hostname()
-  local cs = "kanagawa"
+  local cs = "gruvbox-material"
   if hostname == "tb-loaner" then
     cs = "gruvbox-material"
   end

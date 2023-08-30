@@ -56,21 +56,23 @@ for k, v in pairs(opts) do
 end
 
 vim.diagnostic.config({
+  virtual_text = false,
+  underline = false,
   signs = false
 })
 
 -- TODO: this does not seem to be working now???
 -- set global diagnostic settings
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    update_in_insert = false,
-    underline = true,
-    signs = {
-      severity_limit = "Warning",
-      -- false,
-    },
-    virtual_text = {
-      severity_limit = "Warning",
-    },
-  }
-)              
+-- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+--   vim.lsp.diagnostic.on_publish_diagnostics, {
+--     update_in_insert = false,
+--     underline = true,
+--     signs = {
+--       severity_limit = "Warning",
+--       -- false,
+--     },
+--     virtual_text = {
+--       severity_limit = "Warning",
+--     },
+--   }
+-- )              
