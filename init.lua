@@ -51,6 +51,7 @@ require("lazy").setup({ -- lazy loading plugin manager
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter
   require("plugins.aerial"),
+  require("plugins.lazygit"),
 
   -- Aesthetics
   require("plugins.colors"),
