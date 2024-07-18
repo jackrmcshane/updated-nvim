@@ -13,7 +13,8 @@ local opts = {
   number = true,
   relativenumber = true,
   signcolumn = "yes:1",
-  colorcolumn = "80",
+  -- colorcolumn = "80",
+  cursorline = true,
   scrolloff = 5,
   showmode = false,
 
@@ -46,8 +47,8 @@ local opts = {
   foldenable = true,
   foldlevel = 10,
   foldnestmax = 10,
-  foldmethod = "expr",
-  foldexpr = "nvim_treesitter#foldexpr()",
+  foldmethod = "indent",
+  -- foldexpr = "nvim_treesitter#foldexpr()",
   foldopen = { "block", "mark", "percent", "quickfix", "search", "undo" },
 }
 
@@ -63,17 +64,16 @@ vim.diagnostic.config({
 
 -- TODO: this does not seem to be working now???
 -- set global diagnostic settings
--- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
---   vim.lsp.diagnostic.on_publish_diagnostics, {
---     update_in_insert = false,
---     underline = true,
---     signs = {
---       severity_limit = "Warning",
---       -- false,
---     },
---     virtual_text = {
---       severity_limit = "Warning",
---     },
---   }
--- )              
-vim.opt.updatetime = 50
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    update_in_insert = false,
+    underline = true,
+    -- signs = {
+    --   -- severity_limit = "Hint",
+    --   false,
+    -- },
+    -- virtual_text = {
+    --   severity_limit = "Info",
+    -- },
+  }
+)              

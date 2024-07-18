@@ -7,6 +7,8 @@ local opts = {
   shiftwidth = 4,
   softtabstop = 4,
   expandtab = true,
+
+  foldlevel = 0,
 }
 
 for k, v in pairs(opts) do

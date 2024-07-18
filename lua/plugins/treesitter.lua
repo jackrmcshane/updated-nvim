@@ -19,10 +19,10 @@ return {
           enable = true,
           keymaps = {
             -- TODO: need to change these keybinds
-            init_selection = '<c-space>',
-            node_incremental = '<c-space>',
-            scope_incremental = '<c-s>',
-            node_decremental = '<M-space>',
+            init_selection = '<c-i>',
+            node_incremental = '<c-i>',
+            scope_incremental = '<TAB>',
+            node_decremental = '<S-TAB>',
           },
         },
         textobjects = {

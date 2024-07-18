@@ -7,21 +7,31 @@ vim.g.maplocalleader = ' '
 require("util.ensure_lazy")
 require("lazy").setup({ -- lazy loading plugin manager
 
+  { "folke/todo-comments.nvim", dependencies = {}, opts = {} },
+  -- { "folke/trouble.nvim", dependencies = { "nvim-lua/plenary.nvim" },
+  --   opts = {
+  --     -- config goes here, or leave empty for default settings
+  --   },
+  -- },
+
   -- Functionality
   { "christoomey/vim-tmux-navigator", lazy = false }, -- integration with tmux
   require("plugins.treesitter"),
+  { "nvim-treesitter/nvim-treesitter-context" },
   require("plugins.lsp"),
   -- Completion Engine
-  { 'hrsh7th/nvim-cmp', 
+  { 'hrsh7th/nvim-cmp',
     dependencies = {
-      'hrsh7th/cmp-nvim-lsp', 
+      'hrsh7th/cmp-nvim-lsp',
       "rafamadriz/friendly-snippets",
-      'L3MON4D3/LuaSnip', 
+      'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
       "hrsh7th/cmp-nvim-lua", 
       "onsails/lspkind.nvim", 
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
+      "hrsh7th/cmp-nvim-lua",
+      "onsails/lspkind.nvim",
     },
   },
 
@@ -34,18 +44,13 @@ require("lazy").setup({ -- lazy loading plugin manager
     end,
   },
 
-  { "mfussenegger/nvim-dap" },
-  { "rcarriga/nvim-dap-ui" },
-  { "theHamsta/nvim-dap-virtual-text" },
-  { "nvim-telescope/telescope-dap.nvim" },
-  { "mfussenegger/nvim-dap-python" },
-
-  require("plugins.harpoon"),
+  {"ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = {"nvim-lua/plenary.nvim"}
+  },
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   { 'numToStr/Comment.nvim', opts = {} }, -- works with treesitter
-  { "nvim-treesitter/nvim-treesitter-context" },
-  require("plugins.markdown"),
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  require("plugins.aerial"),
 
   -- Aesthetics
   require("plugins.colors"),
@@ -56,6 +61,4 @@ require("core")
 require("plugins")
 
 utils.set_colorscheme()
-
-vim.cmd [[ colorscheme kanagawa ]]
-vim.cmd [[ echom "<(\"<) <('')>> (>\")>" ]]
+vim.cmd [[ echom "<(\"<) <('')> (>\")>" ]]

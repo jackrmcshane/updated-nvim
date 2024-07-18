@@ -10,9 +10,10 @@ M.set_colorscheme = function()
   end
 
   local hostname = get_hostname()
-  local cs = "gruvbox-material"
+  -- local cs = "kanagawa"
+  local cs = "tokyonight"
   if hostname == "tb-loaner" then
-    cs = "gruvbox-material"
+    cs = "tokyonight"
   end
 
   vim.cmd.colorscheme(cs)

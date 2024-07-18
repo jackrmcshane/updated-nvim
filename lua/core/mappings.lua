@@ -32,6 +32,7 @@ set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
 -- set("n", "<C-j", "<cmd>cprev<CR>zz")
 -- set("n", "<leader>k", "<cmd>lprev<CR>zz")
 -- set("n", "<leader>j", "<cmd>lprev<CR>zz")
+set("n", "<space>e", "<cmd>AerialToggle! left<CR>")
 
 -- VISUAL ----------------------------------------------------------------------
 set("v", "J", ":m '>+1<CR>gv=gv")
